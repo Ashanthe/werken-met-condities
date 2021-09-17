@@ -34,7 +34,7 @@ elif geslacht == "man":
                 print("Sorry u komt niet in aanmerking voor de solicitatie.")
                 exit() 
         gewicht = input("Wat is uw gewicht in kg?     ")
-        if int(gewicht) <90:
+        if int(gewicht) <50:
             print("Sorry u komt niet in aanmerking voor de solicitatie.")
             exit()
            
@@ -48,7 +48,7 @@ ervaring_dieren = input("Hoeveel jaar praktijkervaring heeft u met dierendressuu
 jongleren = input("Hoeveel jaar praktijkervaring heeft u met jongleren?   ")
 acrobatiek = input("Hoeveel jaar praktijkervaring heeft u met acrobatiek?       ")
 
-if int(ervaring_dieren) < 4 or int(jongleren) < 5 or int(acrobatiek) < 3:
+if int(ervaring_dieren) < 4 and int(jongleren) < 5 and int(acrobatiek) < 3:
     print("U voldoet niet aan de criteria voor de functie circusdirecteur")
 else:
     diploma = input("Bent u in het bezit van een MBO Niveau 4 'Ondernemen' diploma?     ")
@@ -67,15 +67,7 @@ else:
                 if certificaat == "nee":
                     print("U voldoet niet aan de criteria voor de functie circusdirecteur")
                 elif certificaat == "ja":
-                    geslacht = input("Wat is uw geslacht?   ")
-                   
-                        
-
-
-
-
-
-                print("gefeliciteerd u komt in aanmerking voor de functie Circusdirecteur voor Circus HotelDeBotel")
+                    print("gefeliciteerd u komt in aanmerking voor de functie Circusdirecteur voor Circus HotelDeBotel")
 
 
  
